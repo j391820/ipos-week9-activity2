@@ -1,6 +1,6 @@
 from random import randint
 import aiohttp
-import asyncio
+
 
 class Document:
     def __init__(self, name, body):
@@ -32,6 +32,5 @@ class Document:
 
 
 
-my_doc = asyncio.run(Document.create("test.txt"))
-print(f"Document {my_doc.name} contains \n {my_doc.body}")
+
 
