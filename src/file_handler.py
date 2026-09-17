@@ -7,5 +7,8 @@ def save_document(document):
     with open (file_path, "w") as file:
         file.write(document.body)
 
-
+def upload_document(filename):
+    source = f"../local/{filename}"
+    destination = f"../remote/{filename}"
+    shutil.move(source, destination)
 
