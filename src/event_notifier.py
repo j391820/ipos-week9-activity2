@@ -5,7 +5,8 @@ class Publisher:
 
     def __init__(self):
         # list to hold all the subscribers.
-        # if expanding system could implement different lists for different even types.
+        # if expanding system could implement different lists for different
+        # even types.
         self.subscribers = []
 
     def register(self, user):
@@ -28,7 +29,7 @@ class Publisher:
         Unregister user to subscribers.
 
         Args:
-            user (string): Username to register.
+            user (user object): User to register.
 
         Returns:
             None.
@@ -40,7 +41,7 @@ class Publisher:
 
     def notify(self, message):
         """
-        Notify all suscribed users.
+        Notify all subscribed users.
 
         Args:
             message (string): Message to send to users.
@@ -65,7 +66,7 @@ class Subscriber:
 
     def receive(self, message):
         """
-        User recieves the message.
+        User receives the message.
 
         Args:
             message (string): Message to send to the user.
@@ -76,4 +77,4 @@ class Subscriber:
         Side effect:
             None.
         """
-        print(message)
+        print(f"{self.name} received: {message}")
