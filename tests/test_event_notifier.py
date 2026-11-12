@@ -1,5 +1,6 @@
 import unittest
 from unittest.mock import patch
+from unittest.mock import Mock
 from src.event_notifier import Publisher, Subscriber
 
 
@@ -16,7 +17,8 @@ class TestEventNotifier(unittest.TestCase):
         Creating a "user".
         """
         self.publisher = Publisher()
-        self.user = "Bob"
+        self.user = Mock()
+        self.user.name = "Bob"
         self.subscriber = Subscriber(self.user)
 
     def test_add_subscriber(self):
