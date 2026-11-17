@@ -71,4 +71,23 @@ In your group **analyse the requirements**. For each, decide which pattern or te
 - Fetch 3 metadata objects concurrently
 
 ---
+## How to Run
+
+1. Clone the repository.
+
+2. Navigate to the repository directory.
+
+3. Install the required dependencies by running:
+
+`pip install -r requirements.txt`
+
+4. Run the program using:
+
+`python main.py`
+
+## How to Test
+
+Run the following command from the repository directory to execute the unit tests:
+
+`python -m unittest`
 
