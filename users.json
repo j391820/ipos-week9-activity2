@@ -1,0 +1,10 @@
+[
+    {
+        "name": "default",
+        "role": "Admin"
+    },
+    {
+        "name": "test",
+        "role": "Editor"
+    }
+]
